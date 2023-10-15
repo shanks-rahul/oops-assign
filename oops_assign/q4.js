@@ -24,14 +24,14 @@ class Rectangle{
 }
 
 class Triangle{
-    constructor(side1,side2,side3,side4){
+    constructor(side1,side2){
         this.side1=side1;
         this.side2=side2;
-        this.side3=side3;
-        this.side4=side4;
+        // this.side3=side3;
+        // this.side4=side4;
     }
     calculateArea(){
-        return this.side3*this.side4*0.5;
+        return this.side1*this.side2*0.5;
     }
     calculatePerimeter(){
         return this.side1+this.side2+this.side3;
@@ -46,7 +46,7 @@ const rectangle=new Rectangle(10,12);
 console.log('the area of the rectangel is '+rectangle.calculateArea());
 console.log (`the perimeter of the rectangle is${rectangle.calculatePerimeter()}`);
 
-const triangle=new Triangle(5,6,10,8);
+const triangle=new Triangle(5,6);
     console.log('area of the triangle'+triangle.calculateArea());
     console.log (`the perimeter of the triangle is${triangle.calculatePerimeter()}`);
 
